@@ -49,3 +49,4 @@
 (depends-on "solarized-theme")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
+(depends-on "ecukes")

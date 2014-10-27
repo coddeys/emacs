@@ -1,6 +1,6 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
-(require 'pallet)
+;; (require 'pallet)
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/.cask/24.3.1/elpa")
 
