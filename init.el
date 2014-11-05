@@ -16,8 +16,7 @@
 (load "09coffee.el")
 (load "10rcodetools.el")
 (load "11flymake.el")
-(require 'multi-term)
-(setq multi-term-program "/bin/zsh")
+(load "12multi-term.el")
 
 
 
