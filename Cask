@@ -35,7 +35,6 @@
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "projectile")
-(depends-on "projectile")
 (depends-on "projectile-rails")
 (depends-on "rainbow-mode")
 (depends-on "robe")
@@ -50,3 +49,4 @@
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
 (depends-on "ecukes")
+(depends-on "magit")
