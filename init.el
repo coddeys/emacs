@@ -17,6 +17,7 @@
 (load "10rcodetools.el")
 (load "11flymake.el")
 (load "12multi-term.el")
+(load "13erc.el")
 
 
 
