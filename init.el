@@ -19,6 +19,10 @@
 (load "12multi-term.el")
 (load "13erc.el")
 (load "14magit.el")
+(load "15rbenv.el")
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
+
+(require 'ruby-mode)
+(define-key ruby-mode-map (kbd "C-c C-c") 'xmp)

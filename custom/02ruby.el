@@ -10,5 +10,3 @@
 
 (setq ruby-bounce-deep-indent t)
 (setq ruby-hanging-brace-indent-level 2)
-(require 'ruby-mode)
-(define-key ruby-mode-map (kbd "C-c C-c") 'xmp)
