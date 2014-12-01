@@ -50,3 +50,4 @@
 (depends-on "yasnippet")
 (depends-on "ecukes")
 (depends-on "magit")
+(depends-on "discover")
