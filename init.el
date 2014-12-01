@@ -21,6 +21,7 @@
 (load "14magit.el")
 (load "15rbenv.el")
 (load "16discover.el")
+(load "17restclient.el")
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)

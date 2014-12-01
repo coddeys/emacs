@@ -1,5 +1,4 @@
 (source gnu)
-(source marmalade)
 (source melpa)
 
 (depends-on "ac-js2")
@@ -31,7 +30,6 @@
 (depends-on "json-mode")
 (depends-on "multi-term")
 (depends-on "multiple-cursors")
-(depends-on "multiple-cursors")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "projectile")
@@ -51,3 +49,5 @@
 (depends-on "ecukes")
 (depends-on "magit")
 (depends-on "discover")
+(depends-on "restclient")
+(depends-on "json-reformat")
