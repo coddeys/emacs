@@ -22,6 +22,7 @@
 (load "15rbenv.el")
 (load "16discover.el")
 (load "17restclient.el")
+(load "18haskell.el")
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
@@ -42,3 +43,4 @@
   (define-key ido-completion-map (kbd "C-n") 'ido-next-match)
   (define-key ido-completion-map (kbd "C-p") 'ido-prev-match))
 (add-hook 'ido-setup-hook 'ido-define-keys)
+

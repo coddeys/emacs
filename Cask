@@ -36,8 +36,6 @@
 (depends-on "projectile-rails")
 (depends-on "rainbow-mode")
 (depends-on "robe")
-(depends-on "robe")
-(depends-on "rvm")
 (depends-on "s")
 (depends-on "shut-up")
 (depends-on "simple-httpd")
@@ -51,3 +49,4 @@
 (depends-on "discover")
 (depends-on "restclient")
 (depends-on "json-reformat")
+(depends-on "scion")
