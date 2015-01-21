@@ -50,3 +50,4 @@
 (depends-on "restclient")
 (depends-on "json-reformat")
 (depends-on "scion")
+(depends-on "emamux")

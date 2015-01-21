@@ -23,6 +23,7 @@
 (load "16discover.el")
 (load "17restclient.el")
 (load "18haskell.el")
+(load "19w3m.el")
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
