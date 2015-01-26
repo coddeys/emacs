@@ -1,3 +1,6 @@
+;; run w3m
+(global-set-key (kbd "\C-cw") 'w3m)
+
 ;; browse-url
 (setq browse-url-browser-function 'w3m-browse-url)  
 (global-set-key "\C-xm" 'browse-url-at-point)       

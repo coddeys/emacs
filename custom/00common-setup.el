@@ -1,5 +1,5 @@
 (ido-mode t)
-(set-default-font "Inconsolata LGC-14")
+(set-default-font "Inconsolata LGC-14.5")
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -26,3 +26,6 @@
 (define-key minibuffer-local-map (kbd "C-<tab>") 'dabbrev-expand)
 (setq tab-width 4)
 
+;; switch-window
+(global-set-key (kbd "M-p") 'ace-window)
+(global-set-key (kbd "C-c M-p") 'ace-window) ; for multi-term
