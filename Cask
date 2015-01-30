@@ -51,3 +51,5 @@
 (depends-on "json-reformat")
 (depends-on "scion")
 (depends-on "emamux")
+(depends-on "w3m")
+(depends-on "js2-mode")
