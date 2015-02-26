@@ -56,3 +56,5 @@
 (depends-on "fuzzy")
 (depends-on "fuzzy-match")
 (depends-on "sass-mode")
+(depends-on "golden-ratio")
+(depends-on "ace-window")
