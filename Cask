@@ -50,7 +50,9 @@
 (depends-on "emamux")
 (depends-on "w3m")
 (depends-on "helm")
-
 (depends-on "projectile")
 (depends-on "projectile-rails")
 (depends-on "helm-projectile")
+(depends-on "fuzzy")
+(depends-on "fuzzy-match")
+(depends-on "sass-mode")
