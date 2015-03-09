@@ -58,3 +58,5 @@
 (depends-on "sass-mode")
 (depends-on "golden-ratio")
 (depends-on "ace-window")
+(depends-on "slime")
+(depends-on "skewer-mode")

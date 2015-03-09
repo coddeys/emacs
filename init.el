@@ -26,4 +26,4 @@
 (load "19w3m.el")
 (load "20js.el")
 (load "21helm.el")
-
+(load "setup-skewer.el")

@@ -9,3 +9,7 @@
 ;; * 2 adds highlighting of some Ecma built-in properties.
 ;; * 3 adds highlighting of many Ecma built-in functions.
 (setq js2-highlight-level 3)
+
+;; Indent
+(setq js3-indent-level 4)
+
