@@ -60,3 +60,4 @@
 (depends-on "ace-window")
 (depends-on "slime")
 (depends-on "skewer-mode")
+(depends-on "win-switch")

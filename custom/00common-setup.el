@@ -27,12 +27,17 @@
 (setq tab-width 4)
 
 ;; switch-window
-(global-set-key (kbd "M-p") 'ace-window)
-(global-set-key (kbd "C-c M-p") 'ace-window) ; for multi-term
+;; (global-set-key (kbd "M-p") 'ace-window)
+(global-set-key (kbd "C-c v") 'ace-window)
 
 ;; don't kill emacs
 (defun dont-kill-emacs ()
   (interactive)
   (error (substitute-command-keys "To exit emacs: \\[kill-emacs]")))
 (global-set-key "\C-x\C-c" 'dont-kill-emacs)
+
+;; win-switch
+(require 'win-switch)
+(win-switch-setup-keys-ijkl "\C-xo" "\C-x\C-o")
+(setq win-switch-idle-time 2)
 
