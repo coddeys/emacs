@@ -41,3 +41,4 @@
 (win-switch-setup-keys-ijkl "\C-xo" "\C-x\C-o")
 (setq win-switch-idle-time 2)
 
+(global-set-key (kbd "C-c %") 'query-replace-regexp)

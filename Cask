@@ -61,3 +61,5 @@
 (depends-on "slime")
 (depends-on "skewer-mode")
 (depends-on "win-switch")
+(depends-on "helm-ag")
+(depends-on "p4")

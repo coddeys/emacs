@@ -27,3 +27,4 @@
 (load "20js.el")
 (load "21helm.el")
 (load "setup-skewer.el")
+(load "custom-p4.el")
