@@ -4,7 +4,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
-(load-theme 'solarized-dark t)
+(load-theme 'zenburn t)
 (setq system-uses-terminfo nil)
 (prefer-coding-system 'utf-8)
 (setq-default indent-tabs-mode nil)

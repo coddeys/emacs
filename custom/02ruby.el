@@ -13,3 +13,4 @@
 
 (require 'ruby-mode)
 (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)
+(setq ruby-insert-encoding-magic-comment nil)

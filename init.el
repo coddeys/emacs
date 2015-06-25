@@ -23,8 +23,9 @@
 (load "16discover.el")
 (load "17restclient.el")
 (load "18haskell.el")
-(load "19w3m.el")
+(load "w3m.el")
 (load "20js.el")
 (load "21helm.el")
 (load "setup-skewer.el")
 (load "custom-p4.el")
+
