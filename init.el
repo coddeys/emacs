@@ -28,4 +28,4 @@
 (load "21helm.el")
 (load "setup-skewer.el")
 (load "custom-p4.el")
-
+(load "setup-emms.el")

@@ -63,3 +63,4 @@
 (depends-on "helm-ag")
 (depends-on "p4")
 (depends-on "flycheck")
+(depends-on "emms")

@@ -1,0 +1,5 @@
+(require 'emms-setup)
+(require 'emms-browser)
+(emms-all)
+(emms-default-players)
+(setq emms-source-file-default-directory "~/music/")
