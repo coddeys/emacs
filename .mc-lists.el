@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        emms-seek-backward
         indent-for-tab-command
         ))
 

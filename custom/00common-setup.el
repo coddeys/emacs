@@ -1,5 +1,6 @@
 (ido-mode t)
-(set-default-font "Inconsolata LGC-12")
+(set-default-font "Inconsolata LGC-12.5")
+(setq default-frame-alist '((font . "Inconsolata LGC-12.5")))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
