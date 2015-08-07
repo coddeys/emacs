@@ -43,3 +43,6 @@
 (setq win-switch-idle-time 2)
 
 (global-set-key (kbd "C-c %") 'query-replace-regexp)
+
+(require 'golden-ratio)
+(golden-ratio-mode 1)
