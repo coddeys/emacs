@@ -29,3 +29,5 @@
 (load "setup-skewer.el")
 (load "custom-p4.el")
 (load "setup-emms.el")
+(load "22exwm.el")
+
