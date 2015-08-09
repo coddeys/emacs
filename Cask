@@ -64,3 +64,4 @@
 (depends-on "p4")
 (depends-on "flycheck")
 (depends-on "emms")
+(depends-on "zenburn-theme")
