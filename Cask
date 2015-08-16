@@ -65,3 +65,4 @@
 (depends-on "flycheck")
 (depends-on "emms")
 (depends-on "zenburn-theme")
+(depends-on "google-translate")
