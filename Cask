@@ -13,8 +13,8 @@
 (depends-on "company-inf-ruby")
 (depends-on "enh-ruby-mode")
 (depends-on "flymake-ruby")
+(depends-on "rubocop")
 (depends-on "inf-ruby")
-
 
 (depends-on "color-theme")
 (depends-on "zenburn-theme")
