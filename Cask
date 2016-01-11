@@ -21,6 +21,7 @@
 (depends-on "highlight")
 (depends-on "highlight-indentation")
 
+(depends-on "avy")
 
 (depends-on "google-translate")
 

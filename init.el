@@ -7,6 +7,7 @@
 (load "00common-setup.el")
 (load "uniquify-config.el")
 (load "yaml-config.el")
+(load "avy-config.el")
 
 (load "01auto-complete.el")
 (load "02ruby.el")
