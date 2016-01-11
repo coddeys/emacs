@@ -1,6 +1,6 @@
 (ido-mode t)
-(set-default-font "Inconsolata LGC-13.5")
-(setq default-frame-alist '((font . "Inconsolata LGC-13.5")))
+(set-default-font "Inconsolata-15")
+(setq default-frame-alist '((font . "Inconsolata-14")))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -17,15 +17,13 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-(autoload
-  'ace-jump-mode
-  "ace-jump-mode"
-  "Emacs quick move minor mode"
-  t)
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-(global-set-key (kbd "C-<tab>") 'dabbrev-expand)
-(define-key minibuffer-local-map (kbd "C-<tab>") 'dabbrev-expand)
-(setq tab-width 4)
+
+
+
+(global-set-key (kbd "M-<tab>") 'dabbrev-expand)
+(define-key minibuffer-local-map (kbd "M-<tab>") 'dabbrev-expand)
+
+(setq tab-width 2)
 
 ;; switch-window
 ;; (global-set-key (kbd "M-p") 'ace-window)
@@ -44,5 +42,13 @@
 
 (global-set-key (kbd "C-c %") 'query-replace-regexp)
 
-(require 'golden-ratio)
-(golden-ratio-mode 0)
+;; (require 'golden-ratio)
+;; (golden-ratio-mode 0)
+
+
+;; (autoload
+;;   'ace-jump-mode
+;;   "ace-jump-mode"
+;;   "Emacs quick move minor mode"
+;;   t)
+;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)

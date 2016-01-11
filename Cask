@@ -1,30 +1,41 @@
 (source gnu)
 (source melpa)
 
-(depends-on "ac-js2")
-(depends-on "ace-jump-buffer")
-(depends-on "ace-jump-mode")
-(depends-on "auto-complete")
+
 (depends-on "cask")
-(depends-on "coffee-mode")
-(depends-on "color-theme")
-(depends-on "company")
+
+
+(depends-on "projectile")
+(depends-on "projectile-rails")
+(depends-on "helm-projectile")
+(depends-on "helm-ag")
+
 (depends-on "company-inf-ruby")
-(depends-on "dash")
-(depends-on "dired+")
 (depends-on "enh-ruby-mode")
+(depends-on "flymake-ruby")
+(depends-on "inf-ruby")
+
+
+(depends-on "color-theme")
+(depends-on "zenburn-theme")
+(depends-on "highlight")
+(depends-on "highlight-indentation")
+
+
+(depends-on "google-translate")
+
+
+(depends-on "auto-complete")
+(depends-on "company")
+(depends-on "dired+")
+(depends-on "dash")
 (depends-on "epl")
 (depends-on "f")
 (depends-on "feature-mode")
 (depends-on "flymake")
-(depends-on "flymake-ruby")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
-(depends-on "highlight")
-(depends-on "highlight-indentation")
 (depends-on "iflipb")
-(depends-on "inf-ruby")
-(depends-on "js2-mode")
 (depends-on "js3-mode")
 (depends-on "json-mode")
 (depends-on "multi-term")
@@ -38,7 +49,6 @@
 (depends-on "simple-httpd")
 (depends-on "smartparens")
 (depends-on "smex")
-(depends-on "solarized-theme")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
 (depends-on "ecukes")
@@ -50,19 +60,15 @@
 (depends-on "emamux")
 (depends-on "w3m")
 (depends-on "helm")
-(depends-on "projectile")
-(depends-on "projectile-rails")
-(depends-on "helm-projectile")
 (depends-on "fuzzy")
 (depends-on "fuzzy-match")
 (depends-on "sass-mode")
 (depends-on "ace-window")
 (depends-on "slime")
-(depends-on "skewer-mode")
 (depends-on "win-switch")
-(depends-on "helm-ag")
-(depends-on "p4")
 (depends-on "flycheck")
 (depends-on "emms")
-(depends-on "zenburn-theme")
-(depends-on "google-translate")
+
+
+
+(depends-on "p4")

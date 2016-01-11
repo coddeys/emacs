@@ -2,7 +2,7 @@
 (global-set-key (kbd "\C-cw") 'w3m)
 
 ;; browse-url
-(setq browse-url-browser-function 'w3m-browse-url)  
+(setq browse-url-browser-function 'browse-url-chromium)  
 (global-set-key "\C-xm" 'browse-url-at-point)       
 
 ;; diredl

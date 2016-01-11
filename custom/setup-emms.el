@@ -1,4 +1,4 @@
-(require 'emms-setup)
+''(require 'emms-setup)
 (require 'emms-browser)
 (emms-all)
 (emms-default-players)
