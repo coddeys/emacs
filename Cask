@@ -65,7 +65,6 @@
 (depends-on "sass-mode")
 (depends-on "ace-window")
 (depends-on "slime")
-(depends-on "win-switch")
 (depends-on "flycheck")
 (depends-on "emms")
 

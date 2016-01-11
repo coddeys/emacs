@@ -5,6 +5,9 @@
 (add-to-list 'load-path "~/.emacs.d/.cask/24.4.1/elpa")
 
 (load "00common-setup.el")
+(load "uniquify-config.el")
+(load "yaml-config.el")
+
 (load "01auto-complete.el")
 (load "02ruby.el")
 (load "03smartparens.el")
@@ -31,6 +34,7 @@
 (load "setup-emms.el")
 (load "23google-translate.el")
 (load "setup-elm.el")
+
 ;; (load "22exwm.el")
 
 
