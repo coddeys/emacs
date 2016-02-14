@@ -10,11 +10,13 @@
 (depends-on "helm-projectile")
 (depends-on "helm-ag")
 
-(depends-on "company-inf-ruby")
 (depends-on "enh-ruby-mode")
 (depends-on "flymake-ruby")
 (depends-on "rubocop")
 (depends-on "inf-ruby")
+(depends-on "company-inf-ruby")
+(depends-on "fill-column-indicator")
+
 
 (depends-on "color-theme")
 (depends-on "zenburn-theme")
@@ -68,7 +70,6 @@
 (depends-on "slime")
 (depends-on "flycheck")
 (depends-on "emms")
-
 
 
 (depends-on "p4")

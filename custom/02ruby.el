@@ -18,6 +18,6 @@
 (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)
 (setq ruby-insert-encoding-magic-comment nil)
 
-(add-hook 'ruby-mode-hook #'rubocop-mode)
+;; (add-hook 'ruby-mode-hook #'rubocop-mode)
 
 
