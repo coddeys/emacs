@@ -8,6 +8,8 @@
 (load "uniquify-config.el")
 (load "yaml-config.el")
 (load "avy-config.el")
+(load "magit-config.el")
+(load "ace-window-config.el")
 (load "80column-config.el")
 
 (load "01auto-complete.el")
@@ -23,7 +25,6 @@
 (load "11flymake.el")
 (load "12multi-term.el")
 (load "13erc.el")
-(load "14magit.el")
 (load "15rbenv.el")
 (load "16discover.el")
 (load "17restclient.el")
