@@ -1,7 +1,7 @@
 (ido-mode t)
 
-(set-default-font "Inconsolata-15")
-(setq default-frame-alist '((font . "Inconsolata-14")))
+(set-default-font "Inconsolata-16")
+(setq default-frame-alist '((font . "Inconsolata-16")))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)

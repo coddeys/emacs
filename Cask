@@ -69,7 +69,3 @@
 (depends-on "ace-window")
 (depends-on "slime")
 (depends-on "flycheck")
-(depends-on "emms")
-
-
-(depends-on "p4")
