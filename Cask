@@ -27,6 +27,8 @@
 
 (depends-on "google-translate")
 
+(depends-on "web-mode")
+(depends-on "dash")
 
 (depends-on "auto-complete")
 (depends-on "company")
@@ -69,3 +71,4 @@
 (depends-on "ace-window")
 (depends-on "slime")
 (depends-on "flycheck")
+

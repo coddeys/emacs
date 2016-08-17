@@ -11,6 +11,8 @@
 (load "magit-config.el")
 (load "ace-window-config.el")
 (load "80column-config.el")
+(load "jsx-config.el")
+(load "flycheck-config.el")
 
 (load "01auto-complete.el")
 (load "02ruby.el")
@@ -22,7 +24,6 @@
 (load "08feature.el")
 (load "09coffee.el")
 (load "10rcodetools.el")
-(load "11flymake.el")
 (load "12multi-term.el")
 (load "13erc.el")
 (load "15rbenv.el")
