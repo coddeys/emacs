@@ -3,5 +3,6 @@
 
 ;;; Code:
 (require 'flycheck)
-(add-hook 'after-init-hook #'global-flycheck-mode)
+(global-flycheck-mode)
+
 ;;; flycheck-config.el ends here
