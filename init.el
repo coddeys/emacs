@@ -1,3 +1,7 @@
+;;; package --- JSX-config
+;;; Commentary:
+
+;;; Code:
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 ;; (require 'pallet)
@@ -37,6 +41,4 @@
 (load "setup-emms.el")
 (load "23google-translate.el")
 (load "setup-elm.el")
-
-
-
+;;; init.el ends here

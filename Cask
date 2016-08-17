@@ -11,7 +11,6 @@
 (depends-on "helm-ag")
 
 (depends-on "enh-ruby-mode")
-(depends-on "flymake-ruby")
 (depends-on "rubocop")
 (depends-on "inf-ruby")
 (depends-on "company-inf-ruby")
@@ -28,7 +27,7 @@
 (depends-on "google-translate")
 
 (depends-on "web-mode")
-(depends-on "dash")
+(depends-on "flycheck")
 
 (depends-on "auto-complete")
 (depends-on "company")
@@ -37,7 +36,6 @@
 (depends-on "epl")
 (depends-on "f")
 (depends-on "feature-mode")
-(depends-on "flymake")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
 (depends-on "iflipb")
