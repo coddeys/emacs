@@ -17,6 +17,7 @@
 (load "80column-config.el")
 (load "jsx-config.el")
 (load "flycheck-config.el")
+(load "js-config.el")
 
 (load "01auto-complete.el")
 (load "02ruby.el")
@@ -35,7 +36,6 @@
 (load "17restclient.el")
 (load "18haskell.el")
 (load "setup-w3m.el")
-(load "20js.el")
 (load "21helm.el")
 (load "custom-p4.el")
 (load "setup-emms.el")
