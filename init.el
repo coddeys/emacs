@@ -28,6 +28,6 @@
 (load "multi-term-config.el")
 (load "discover-config.el")
 (load "setup-w3m.el")
-(load "helm-config.el")
+(load "helm-cnfg.el")
 (load "google-translate-config.el")
 ;;; init.el ends here
