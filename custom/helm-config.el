@@ -1,3 +1,6 @@
+;;; package --- JSX-config
+;;; Commentary:
+;;; Code:
 (require 'helm)
 (require 'helm-config)
 (helm-mode 1)
@@ -15,3 +18,4 @@
       helm-recentf-fuzzy-match    t)
 
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+;;; js-config.el ends here

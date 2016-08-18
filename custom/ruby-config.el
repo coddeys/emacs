@@ -1,3 +1,6 @@
+;;; package --- Ruby Config
+;;; Commentary:
+;;; Code:
 (require 'ruby-mode)
 (require 'rubocop)
 
@@ -14,10 +17,14 @@
 (setq ruby-bounce-deep-indent t)
 (setq ruby-hanging-brace-indent-level 2)
 
-
 (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)
 (setq ruby-insert-encoding-magic-comment nil)
+(add-hook 'ruby-mode-hook #'rubocop-mode)
 
-;; (add-hook 'ruby-mode-hook #'rubocop-mode)
+(require 'robe)
+(add-hook 'ruby-mode-hook 'robe-mode)
 
-
+;; Setting rbenv path
+(setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
+(setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
+;;; ruby-config.el ends here
