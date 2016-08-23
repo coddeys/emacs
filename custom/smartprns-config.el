@@ -7,4 +7,5 @@
 
 ;; Always start smartparens mode in js-mode.
 (add-hook 'js-mode-hook #'smartparens-mode)
+(add-hook 'ruby-mode-hook #'smartparens-mode)
 ;;; smartprns-config.el ends here

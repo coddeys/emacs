@@ -15,6 +15,7 @@
 (depends-on "inf-ruby")
 (depends-on "company-inf-ruby")
 (depends-on "fill-column-indicator")
+(depends-on "robe")
 
 
 (depends-on "color-theme")
@@ -28,6 +29,11 @@
 
 (depends-on "web-mode")
 (depends-on "flycheck")
+(depends-on "ruby-electric")
+(depends-on "ruby-block")
+(depends-on "anzu")
+(depends-on "ruby-refactor")
+(depends-on "smart-compile")
 
 (depends-on "auto-complete")
 (depends-on "company")
@@ -46,7 +52,6 @@
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "rainbow-mode")
-(depends-on "robe")
 (depends-on "s")
 (depends-on "shut-up")
 (depends-on "simple-httpd")
