@@ -35,9 +35,13 @@
 (depends-on "ruby-refactor")
 (depends-on "smart-compile")
 
-(depends-on "auto-complete")
 (depends-on "company")
 (depends-on "dired+")
+(depends-on "elm-mode")
+
+
+
+
 (depends-on "dash")
 (depends-on "epl")
 (depends-on "f")
