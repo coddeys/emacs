@@ -30,4 +30,5 @@
 (load "setup-w3m.el")
 (load "helm-cnfg.el")
 (load "google-translate-config.el")
+(load "wanderlust-config.el")
 ;;; init.el ends here
