@@ -11,8 +11,6 @@
 (prefer-coding-system 'utf-8)
 (setq-default indent-tabs-mode nil)
 
-(defalias 'yes-or-no-p 'y-or-n-p) 
-
 (global-set-key (kbd "M-<tab>") 'dabbrev-expand)
 (define-key minibuffer-local-map (kbd "M-<tab>") 'dabbrev-expand)
 

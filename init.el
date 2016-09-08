@@ -8,6 +8,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/.cask/24.4.1/elpa")
 
+(load "better-defaults.el")
 (load "00common-setup.el")
 (load "uniquify-config.el")
 (load "yaml-config.el")
