@@ -1,7 +1,7 @@
 (ido-mode t)
 
-(set-default-font "Inconsolata-15")
-(setq default-frame-alist '((font . "Inconsolata-15")))
+(set-default-font "Iosevka-13")
+(setq default-frame-alist '((font . "Iosevka-13")))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -17,7 +17,6 @@
 (define-key minibuffer-local-map (kbd "M-<tab>") 'dabbrev-expand)
 
 (setq tab-width 2)
-
 ;; don't kill emacs
 (defun dont-kill-emacs ()
   (interactive)
