@@ -49,7 +49,6 @@
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
 (depends-on "iflipb")
-(depends-on "js3-mode")
 (depends-on "json-mode")
 (depends-on "multi-term")
 (depends-on "multiple-cursors")

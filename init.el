@@ -1,7 +1,9 @@
-;;; package --- JSX-config
+;;; package --- Emacs init.el
 ;;; Commentary:
 
 ;;; Code:
+(package-initialize)
+
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 ;; (require 'pallet)
@@ -31,5 +33,5 @@
 (load "setup-w3m.el")
 (load "helm-cnfg.el")
 (load "google-translate-config.el")
-(load "wanderlust-config.el")
+;; (load "wanderlust-config.el")
 ;;; init.el ends here
