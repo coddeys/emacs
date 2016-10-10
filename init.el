@@ -35,3 +35,22 @@
 (load "google-translate-config.el")
 ;; (load "wanderlust-config.el")
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(anzu-deactivate-region t)
+ '(anzu-mode-lighter "")
+ '(anzu-replace-to-string-separator " => ")
+ '(anzu-search-threshold 1000)
+ '(anzu-use-mimego t)
+ '(package-selected-packages
+   (quote
+    (js2-mode editorconfig babel zenburn-theme yasnippet yaml-mode web-mode w3m smex smartparens smart-compile slime simple-httpd scion sass-mode ruby-refactor ruby-electric ruby-block rubocop robe restclient rainbow-mode projectile-rails pallet multiple-cursors multi-term magit json-mode iflipb highlight-indentation highlight helm-projectile helm-ag haskell-mode google-translate fuzzy-match fuzzy flycheck fill-column-indicator feature-mode enh-ruby-mode emamux elm-mode ecukes discover dired+ company-inf-ruby color-theme anzu ace-window))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
