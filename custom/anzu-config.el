@@ -1,7 +1,9 @@
 ;;; package --- Anzu Config
 ;;; Commentary:
 ;;; Code:
-(require 'anzu)
+(use-package anzu
+  :ensure t)
+
 (global-anzu-mode +1)
 
 (set-face-attribute 'anzu-mode-line nil

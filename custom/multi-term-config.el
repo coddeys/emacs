@@ -1,7 +1,9 @@
 ;;; package --- Multi Term Config
 ;;; Commentary:
 ;;; Code:
-(require 'multi-term)
+(use-package multi-term
+  :ensure t)
+
 (setq multi-term-program "/bin/zsh")
 (add-hook 'term-mode-hook
           (lambda ()

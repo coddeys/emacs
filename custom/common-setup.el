@@ -1,3 +1,6 @@
+;;; package --- Emacs common-setup.el
+;;; Commentary:
+
 (ido-mode t)
 
 (set-default-font "Iosevka-13")
@@ -6,7 +9,6 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
-(load-theme 'zenburn t)
 (setq system-uses-terminfo nil)
 (prefer-coding-system 'utf-8)
 (setq-default indent-tabs-mode nil)
@@ -23,14 +25,11 @@
 
 (global-set-key (kbd "C-c %") 'query-replace-regexp)
 
-;; flx
-;; (require 'flx-ido)
-;; (ido-mode 1)
-;; (ido-everywhere 1)
-;; (flx-ido-mode 1)
-;; ;; disable ido faces to see flx highlights.
-;; (setq ido-enable-flex-matching t)
-;; (setq ido-use-faces nil)
+(use-package zenburn-theme
+  :ensure t)
+(load-theme 'zenburn t)
 
-;; (use-package restclient
-;;   :mode ("\\.http\\'" . restclient-mode))
+(use-package restclient
+  :mode ("\\.http\\'" . restclient-mode))
+
+;;; common-setup.el ends here

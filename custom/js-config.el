@@ -1,6 +1,10 @@
 ;;; package --- JSX-config
 ;;; Commentary:
 ;;; Code:
+(use-package js2-mode
+  :ensure t)
+(use-package json-mode
+  :ensure t)
 
 (add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))
 

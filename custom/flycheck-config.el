@@ -2,7 +2,9 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'flycheck)
+(use-package flycheck
+  :ensure t)
+
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; disable jshint since we prefer eslint checking

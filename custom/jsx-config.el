@@ -2,7 +2,9 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'web-mode)
+(use-package web-mode
+  :ensure t)
+
 (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))         

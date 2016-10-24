@@ -1,3 +1,10 @@
+;;; package --- Setup W3m
+;;; Commentary:
+;;; Code:
+
+(use-package w3m
+  :ensure t)
+
 ;; run w3m
 (global-set-key (kbd "\C-cw") 'w3m)
 
@@ -16,3 +23,4 @@
     (if (y-or-n-p (format "Use emacs-w3m to browse %s? "      
                           (file-name-nondirectory file)))     
         (w3m-find-file file))))                               
+;;; setup-w3m.el ends here

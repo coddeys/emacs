@@ -1,5 +1,5 @@
-(when (locate-library "magit")
-  (require 'magit))
+(use-package magit
+  :ensure t)
 
 ; Magit rules!
 (global-set-key (kbd "C-c g") 'magit-status)

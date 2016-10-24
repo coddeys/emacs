@@ -1,8 +1,9 @@
 ;;; package --- JSX-config
 ;;; Commentary:
 ;;; Code:
-(require 'helm)
-(require 'helm-config)
+(use-package helm
+  :ensure t)
+
 (helm-mode 1)
 
 (global-set-key (kbd "M-x") 'helm-M-x)

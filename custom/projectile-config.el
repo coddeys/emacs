@@ -1,10 +1,14 @@
 ;;; package --- Projectile Config
 ;;; Commentary:
 ;;; Code:
-(require 'projectile)
-(projectile-global-mode)
-(add-hook 'projectile-mode-hook 'projectile-rails-on)
+(use-package projectile
+  :ensure t)
 
-(require 'helm-projectile)
-(helm-projectile-on)
+;; (projectile-global-mode)
+;; (add-hook 'projectile-mode-hook 'projectile-rails-on)
+
+(use-package helm-projectile
+  :ensure t)
+
+;; (helm-projectile-on)
 ;;; projectile-config.el ends here

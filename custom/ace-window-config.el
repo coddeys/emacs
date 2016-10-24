@@ -2,7 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'ace-window)
+(use-package ace-window
+  :ensure t)
 
 ;; http://ergoemacs.org/emacs/reclaim_keybindings.html
 (progn

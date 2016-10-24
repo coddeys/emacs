@@ -1,8 +1,13 @@
 ;;; package --- Ruby Config
 ;;; Commentary:
 ;;; Code:
-(require 'ruby-mode)
-(require 'rubocop)
+(use-package ruby-mode
+  :ensure t)
+(use-package rubocop
+  :ensure t)
+(use-package robe
+  :ensure t)
+
 
 (autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
@@ -22,7 +27,6 @@
 (add-hook 'ruby-mode-hook #'rubocop-mode)
 
 ; robe
-(require 'robe)
 (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
 
 ;; Setting rbenv path
@@ -30,11 +34,14 @@
 (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
 
 ;; ruby-block
-(require 'ruby-block)
+(use-package ruby-block
+  :ensure t)
 (ruby-block-mode t)
 (setq ruby-block-highlight-toggle t)
 
 ;; ruby-refactor
-(require 'ruby-refactor)
+(use-package ruby-refactor
+  :ensure t)
+
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 ;;; ruby-config.el ends here
