@@ -37,6 +37,7 @@
 (load "setup-w3m.el")
 (load "helm-cnfg.el")
 (load "google-translate-config.el")
+(load "setup-swiper.el")
 ;; (load "wanderlust-config.el")
 ;;; init.el ends here
 (custom-set-variables
@@ -46,7 +47,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (helm-ag zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe projectile-rails multi-term magit json-mode js2-mode highlight-indentation helm-projectile google-translate flycheck fill-column-indicator discover company-web ace-window))))
+    (swiper restclient-test restclient multiple-cursors markdown-preview-mode markdown-mode helm-ag zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe projectile-rails multi-term magit json-mode js2-mode highlight-indentation helm-projectile google-translate flycheck fill-column-indicator discover company-web ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
