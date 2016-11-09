@@ -1,0 +1,4 @@
+(
+ (:id "sha1:7763af51767526916f206f0c9ea91021bba25dd7" :fingerprint "sha1:07:d2:70:fb:15:e2:0e:04:24:b0:bb:6a:52:5b:5b:c2:69:81:e3:ef" :host "staging.getsurance.de:443" :conditions (:self-signed :no-host-match :unknown-ca :invalid))
+ (:id "sha1:dc69cff77a36d7552166580e61f9ac132f223b90" :fingerprint "sha1:fc:34:ff:72:2a:50:aa:5f:e9:4e:c2:3b:d2:14:e4:18:f0:80:a6:df" :host "getsurance.fb-xpert.fb-preview.de:443" :conditions (:self-signed :no-host-match :unknown-ca :invalid))
+)

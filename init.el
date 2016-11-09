@@ -47,10 +47,11 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (swiper restclient-test restclient multiple-cursors markdown-preview-mode markdown-mode helm-ag zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe projectile-rails multi-term magit json-mode js2-mode highlight-indentation helm-projectile google-translate flycheck fill-column-indicator discover company-web ace-window))))
+    (haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'set-goal-column 'disabled nil)
