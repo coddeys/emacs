@@ -3,8 +3,8 @@
 
 (ido-mode t)
 
-(set-default-font "Iosevka-13")
-(setq default-frame-alist '((font . "Iosevka-13")))
+(set-default-font "Iosevka-12")
+(setq default-frame-alist '((font . "Iosevka-12")))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
