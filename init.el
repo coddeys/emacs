@@ -1,15 +1,24 @@
 ;;; package --- Emacs init.el
 ;;; Commentary:
 ;;; Code:
+(require 'package)
+(setq package-enable-at-startup nil)
 (setq package-archives
       '(("gnu" . "https://elpa.gnu.org/packages/")
         ("melpa" . "https://melpa.org/packages/")
         ("melpa-stable" . "https://stable.melpa.org/packages/")
         ("org" . "http://orgmode.org/elpa/")))
-
 (package-initialize)
-(unless (file-exists-p "~/.emacs.d/elpa/archives/melpa") (package-refresh-contents))
-(package-install 'use-package)
+
+;; Install 'use-package' if necessary
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+(package-install 'use-package))
+
+;; Enable use-package
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -39,7 +48,7 @@
 (load "google-translate-config.el")
 (load "setup-swiper.el")
 ;; (load "wanderlust-config.el")
-;;; init.el ends here
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -57,3 +66,5 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'set-goal-column 'disabled nil)
+
+;;; init.el ends here
