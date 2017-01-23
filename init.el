@@ -109,6 +109,7 @@ scroll-preserve-screen-position 1)
   (load-theme 'zenburn t))
 
 (use-package restclient
+  :ensure t
   :mode ("\\.http\\'" . restclient-mode))
 
 (use-package uniquify
