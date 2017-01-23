@@ -1,6 +1,7 @@
 ;;; package --- Emacs init.el
 ;;; Commentary:
 ;;; Code:
+
 (require 'package)
 (setq package-enable-at-startup nil)
 (setq package-archives
@@ -23,10 +24,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Squeeze all configs in one file
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'load-path "~/.emacs.d/custom")
-(load "rcodetools.el")
 
-;;; common setup
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (setq inhibit-startup-screen t)
@@ -421,7 +419,11 @@ scroll-preserve-screen-position 1)
   (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
 (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh))
 
-;; custom-set-variables
+;; Rcodetools
+(when (file-exists-p "./custom/rcodetools.el")
+  (load-file "./custom/rcodetools.el"))
+
+;; Custom-set-variables
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
