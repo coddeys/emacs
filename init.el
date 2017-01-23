@@ -27,10 +27,11 @@
 (load "rcodetools.el")
 
 ;;; common setup
-;; (scroll-bar-mode -1)
-;; (menu-bar-mode -1)
-;; (global-set-key (kbd "M-<tab>") 'dabbrev-expand)
-;; (define-key minibuffer-local-map (kbd "M-<tab>") 'dabbrev-expand)
+(scroll-bar-mode -1)
+(menu-bar-mode -1)
+(setq inhibit-startup-screen t)
+(global-set-key (kbd "M-<tab>") 'dabbrev-expand)
+(define-key minibuffer-local-map (kbd "M-<tab>") 'dabbrev-expand)
 
 (use-package ido
   :ensure t
@@ -42,7 +43,10 @@
         ido-max-prospects 10
         ido-default-file-method 'selected-window
         ido-auto-merge-work-directories-length -1)
-(ido-mode +1))
+  (ido-mode +1))
+
+;; replace buffer-menu with ibuffer
+(global-set-key (kbd "C-x C-b") #'ibuffer)
 
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
@@ -115,7 +119,7 @@ scroll-preserve-screen-position 1)
   (setq uniquify-after-kill-buffer-p t)
   ;; don't muck with special buffers
   (setq uniquify-ignore-buffers-re "^\\*"))
-  
+
 (use-package yaml-mode
   :ensure t
   :config
