@@ -435,6 +435,8 @@ scroll-preserve-screen-position 1)
 (when (file-exists-p "./custom/rcodetools.el")
   (load-file "./custom/rcodetools.el"))
 
+(display-time-mode 1)
+
 ;; Custom-set-variables
 
 (custom-set-variables
