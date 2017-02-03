@@ -227,6 +227,10 @@ scroll-preserve-screen-position 1)
   (push 'company-robe company-backends)
   (add-hook 'after-init-hook 'global-company-mode))
 
+;; Rcodetools
+(when (file-exists-p "./custom/rcodetools.el")
+  (load-file "./custom/rcodetools.el"))
+
 ;; Ruby Config
 (use-package ruby-mode
   :ensure t
@@ -431,11 +435,10 @@ scroll-preserve-screen-position 1)
 (use-package markdown-mode
   :ensure t)
 
-;; Rcodetools
-(when (file-exists-p "./custom/rcodetools.el")
-  (load-file "./custom/rcodetools.el"))
-
 (display-time-mode 1)
+
+(use-package elm-mode
+  :ensure t)
 
 ;; Custom-set-variables
 
