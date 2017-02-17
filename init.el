@@ -451,7 +451,23 @@ scroll-preserve-screen-position 1)
   (global-set-key (kbd "C-c y") 'helm-yas-complete))
 
 (use-package sass-mode
-  :ensure t)
+  :ensure t
+  :config
+  (add-hook 'sass-mode-hook 'rainbow-mode)
+  (add-hook 'sass-mode-hook
+            (lambda ()
+              (setq c-basic-offset 2)
+              (setq indent-tabs-mode nil))))
+
+(use-package scss-mode
+  :ensure t
+  :config
+  (add-hook 'scss-mode-hook 'rainbow-mode)
+  (add-hook 'sass-mode-hook
+            (lambda ()
+              (setq c-basic-offset 2)
+              (setq indent-tabs-mode nil))))
+
 
 ;; Custom-set-variables
 
@@ -463,7 +479,7 @@ scroll-preserve-screen-position 1)
  '(elm-format-on-save t)
  '(package-selected-packages
    (quote
-    (sass-mode markdown-mode markdown git-gutter anzu elm-mode flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
+    (scss-mode sass-mode markdown-mode markdown git-gutter anzu elm-mode flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
  '(sp-ignore-modes-list (quote (minibuffer-inactive-mode shell-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
