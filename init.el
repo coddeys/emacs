@@ -438,7 +438,10 @@ scroll-preserve-screen-position 1)
 (display-time-mode 1)
 
 (use-package elm-mode
-  :ensure t)
+  :ensure t
+  :config
+  (add-to-list 'company-backends 'company-elm)
+  (setq  elm-format-command "elm-format-0.18"))
 
 (use-package yasnippet
   :ensure t
