@@ -441,6 +441,10 @@ scroll-preserve-screen-position 1)
   :ensure t
   :config
   (add-to-list 'company-backends 'company-elm)
+  (setenv "PATH" (concat (getenv "PATH") ":/home/dima/npm-global/bin"))
+  (setq exec-path (append exec-path '("/home/dima/npm-global/bin")))
+  (setenv "PATH" (concat (getenv "PATH") ":/home/dima/.local/bin"))
+  (setq exec-path (append exec-path '("/home/dima/.local/bin")))
   (setq  elm-format-command "elm-format-0.18"))
 
 (use-package yasnippet
