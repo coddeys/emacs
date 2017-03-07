@@ -385,7 +385,6 @@ scroll-preserve-screen-position 1)
   :ensure t
   :config
   (global-set-key (kbd "M-x") 'counsel-M-x)
-  (global-set-key (kbd "C-x C-f") 'counsel-find-file)
   (global-set-key (kbd "C-c C-g") 'counsel-git)
   (global-set-key (kbd "C-c j") 'counsel-git-grep)
   (global-set-key (kbd "C-c k") 'counsel-ag)
