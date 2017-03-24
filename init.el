@@ -483,6 +483,15 @@ scroll-preserve-screen-position 1)
               (setq indent-tabs-mode nil))))
 
 
+(use-package org-jira
+  :ensure t
+  :config
+  (setq jiralib-url "https://youngfinance.atlassian.net"))
+
+
+(use-package zeal-at-point
+  :ensure t)
+
 ;; Custom-set-variables
 
 (custom-set-variables
@@ -493,7 +502,7 @@ scroll-preserve-screen-position 1)
  '(elm-format-on-save t)
  '(package-selected-packages
    (quote
-    (hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu elm-mode flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
+    (zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu elm-mode flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
  '(sp-ignore-modes-list (quote (minibuffer-inactive-mode shell-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
