@@ -248,8 +248,8 @@ scroll-preserve-screen-position 1)
   (define-key ruby-mode-map (kbd "C-c C-c") 'xmp)
   (setq ruby-insert-encoding-magic-comment nil)
   (add-hook 'ruby-mode-hook #'rubocop-mode)
-  (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
-  (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path))))
+  (setenv "PATH" (concat (getenv "HOME") "/.asdf/shims:" (getenv "HOME") "/.asdf/bin:" (getenv "PATH")))
+  (setq exec-path (cons (concat (getenv "HOME") "/.asdf/shims") (cons (concat (getenv "HOME") "/.asdf/bin") exec-path))))
 
 (use-package rubocop
   :ensure t
