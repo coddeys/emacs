@@ -103,10 +103,10 @@ scroll-preserve-screen-position 1)
   (error (substitute-command-keys "To exit emacs: \\[kill-emacs]")))
 (global-set-key "\C-x\C-c" 'dont-kill-emacs)
 
-(use-package zenburn-theme
+(use-package monokai-theme
   :ensure t
   :config
-  (load-theme 'zenburn t))
+  (load-theme 'monokai t))
 
 (use-package restclient
   :ensure t
