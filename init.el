@@ -137,12 +137,6 @@ scroll-preserve-screen-position 1)
   :ensure t
   :bind (("C-c g" . magit-status)))
 
-(use-package ace-window
-  :ensure t
-  :bind (("M-[" . ace-window))
-  :config
-  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l)))
-
 ;; JS config
 (use-package web-mode
   :ensure t
@@ -317,9 +311,7 @@ scroll-preserve-screen-position 1)
   (setq multi-term-program "/bin/zsh")
   (add-hook 'term-mode-hook
             (lambda ()
-              (add-to-list 'term-bind-key-alist '("C-z m" . term-line-mode))
-              (add-to-list 'term-bind-key-alist '("M-[" . multi-term-prev))
-              (add-to-list 'term-bind-key-alist '("M-]" . multi-term-next))))
+              (add-to-list 'term-bind-key-alist '("C-z m" . term-line-mode))))
   (add-hook 'term-mode-hook
             (lambda ()
               (define-key term-raw-map (kbd "C-y") 'term-paste)))
