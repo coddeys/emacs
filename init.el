@@ -482,6 +482,11 @@ scroll-preserve-screen-position 1)
 (use-package zeal-at-point
   :ensure t)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; dired                                                                  ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq dired-listing-switches "-alh")
+
 ;; Custom-set-variables
 
 (custom-set-variables
