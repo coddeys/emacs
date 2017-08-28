@@ -476,7 +476,7 @@ scroll-preserve-screen-position 1)
               (setq indent-tabs-mode nil))))
 
 
-(use-package elixir-mode
+(use-package alchemist
   :ensure t)
 
 (use-package zeal-at-point
@@ -497,7 +497,7 @@ scroll-preserve-screen-position 1)
  '(elm-format-on-save t)
  '(package-selected-packages
    (quote
-    (elixir-mode emacsql-psql elm-mode zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
+    (helm-c-yasnippet yasnippet diff-hl rainbow-mode rainbow-delimiters restclient alchemist-mode alchemist monokai-theme emacsql-psql elm-mode zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
  '(sp-ignore-modes-list (quote (minibuffer-inactive-mode shell-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
