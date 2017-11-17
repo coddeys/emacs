@@ -355,7 +355,8 @@ scroll-preserve-screen-position 1)
   (global-set-key (kbd "C-x b") 'helm-mini)
   (setq helm-buffers-fuzzy-matching t
         helm-recentf-fuzzy-match    t)
-  (global-set-key (kbd "C-x C-f") 'helm-find-files))
+  ;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
+  )
 
 (use-package google-translate
   :ensure t
@@ -381,7 +382,9 @@ scroll-preserve-screen-position 1)
   (global-set-key (kbd "C-c C-g") 'counsel-git)
   (global-set-key (kbd "C-c j") 'counsel-git-grep)
   (global-set-key (kbd "C-c k") 'counsel-ag)
-  (global-set-key (kbd "C-x l") 'counsel-locate))
+  (global-set-key (kbd "C-x l") 'counsel-locate)
+  (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+  (global-set-key (kbd "C-x C-r") 'ivy-resume))
 
 (use-package hydra
   :ensure t)
