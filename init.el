@@ -128,8 +128,8 @@ scroll-preserve-screen-position 1)
 
 (use-package avy
   :ensure t
-  :bind (("C-;" . avy-goto-char)
-         ("C-'" . avy-goto-char-2))
+  :bind (("C-;" . avy-goto-char))
+         ;; ("C-'" . avy-goto-char-2))
   :config
   (setq avy-background t))
 
@@ -370,11 +370,6 @@ scroll-preserve-screen-position 1)
   (global-set-key (kbd "C-s") 'swiper)
   )
 
-(use-package swiper
-  :ensure t
-  :config
-  (global-set-key (kbd "C-s") 'swiper))
-
 (use-package counsel
   :ensure t
   :config
@@ -502,6 +497,13 @@ scroll-preserve-screen-position 1)
             (auto-fill-mode 1)
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
+
+;; Ace-window
+(use-package ace-window
+  :ensure t
+  :config
+  (global-set-key (kbd "C-'") 'ace-window)
+  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
