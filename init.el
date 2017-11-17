@@ -487,6 +487,20 @@ scroll-preserve-screen-position 1)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+
+;; Octave Config
+(autoload 'octave-mode "octave-mod" nil t)
+(setq auto-mode-alist
+      (cons '("\\.m$" . octave-mode) auto-mode-alist))
+
+(add-hook 'octave-mode-hook
+          (lambda ()
+            (abbrev-mode 1)
+            (auto-fill-mode 1)
+            (if (eq window-system 'x)
+                (font-lock-mode 1))))
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; dired                                                                  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -500,9 +514,12 @@ scroll-preserve-screen-position 1)
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(elm-format-on-save t)
+ '(org-agenda-files
+   (quote
+    ("~/projects/gs/jira/gs1081.org" "~/projects/gs/jira/gs-1012.org")))
  '(package-selected-packages
    (quote
-    (helm-c-yasnippet yasnippet diff-hl rainbow-mode rainbow-delimiters restclient alchemist-mode alchemist monokai-theme emacsql-psql elm-mode zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
+    (web-beautify octave-mode helm-c-yasnippet yasnippet diff-hl rainbow-mode rainbow-delimiters restclient alchemist-mode alchemist monokai-theme emacsql-psql elm-mode zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
  '(sp-ignore-modes-list (quote (minibuffer-inactive-mode shell-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
