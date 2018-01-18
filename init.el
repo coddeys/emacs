@@ -440,10 +440,19 @@ scroll-preserve-screen-position 1)
 (use-package hindent
   :ensure t)
 
+;; Haskell
+
 (use-package haskell-mode
   :ensure t
   :config
-  (add-hook 'haskell-mode-hook #'hindent-mode))
+  (add-hook 'haskell-mode-hook 'hindent-mode)
+  (define-key haskell-mode-map "\C-ch" 'haskell-hoogle) )
+
+;; Install Intero
+(use-package intero
+  :ensure t
+  :config
+  (add-hook 'haskell-mode-hook 'intero-mode))
 
 (use-package yasnippet
   :ensure t
@@ -521,10 +530,10 @@ scroll-preserve-screen-position 1)
  '(elm-format-on-save t)
  '(org-agenda-files
    (quote
-    ("~/projects/gs/jira/gs1081.org" "~/projects/gs/jira/gs-1012.org")))
+    ("~/todo/day.org" "~/todo/2018.org" "~/projects/gs/jira/gs1081.org" "~/projects/gs/jira/gs-1012.org")))
  '(package-selected-packages
    (quote
-    (web-beautify octave-mode helm-c-yasnippet yasnippet diff-hl rainbow-mode rainbow-delimiters restclient alchemist-mode alchemist monokai-theme emacsql-psql elm-mode zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
+    (stylus-mode org-pomodoro web-beautify octave-mode helm-c-yasnippet yasnippet diff-hl rainbow-mode rainbow-delimiters restclient alchemist-mode alchemist monokai-theme emacsql-psql elm-mode zeal-at-point helm-dash org-jira jira-markup-mode slack hindent scss-mode sass-mode markdown-mode markdown git-gutter anzu flycheck-elm docker dockerfile-mode railscasts-reloaded-theme railscasts-theme anti-zenburn-theme nodejs-repl moz haskell-mode slim-mode zenburn-theme yaml-mode web-mode w3m use-package smartparens ruby-refactor ruby-block rubocop robe restclient-test projectile-rails multiple-cursors multi-term markdown-preview-mode magit log4j-mode json-mode js2-mode ivy-hydra highlight-indentation helm-projectile helm-ag google-translate flycheck fill-column-indicator discover counsel company-web ace-window)))
  '(sp-ignore-modes-list (quote (minibuffer-inactive-mode shell-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
